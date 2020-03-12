@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html class="no-js" style="width: 720; height: 1344;">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MATH</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body style="width: 720; height: 1344;">
+    <center>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+            
+            <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            </script>
+        
+        <div>
+          Значеие Y: <input class='y' type="text" id="y" >
+          <!-- <input type="radio" id="ry"   name="r1"></td>   --><br>
+          Значеие K: <input class='K' type="text" id="k" >
+          <!-- <input type="radio" id="rk"   name="r1"></td>   --><br>
+          Значеие X: <input class='X' type="text" id="x" >
+          <!-- <input type="radio" id="rx"   name="r1"></td> --><br>
+          Степень X<sup><small>n</small></sup>: <input class='Pow' type="text" id="pow" >
+          <!-- <input type="radio" id="rpow"   name="r1">--><br> 
+          Значеие B: <input class='B' type="text" id="b" >
+          <!-- <input type="radio" id="rb"   name="r1"></td> --><br>
+          <!-- x0: <input class='x0' type="text" id="x0" >  <input type="radio" id="rw0">--><br>
+          <br>
+          <input type="button" onclick="rav()" value="Решить">
+        </div>
+        <script src="main.js"></script>
+    </center>
+    </body>
+</html>
